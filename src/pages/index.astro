@@ -1,11 +1,31 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout>
+  <main class="mt-40">
+    <section class="mx-auto max-w-screen-lg flex">
+      
+      <!-- Left half: text -->
+      <div class="w-1/2 pr-6">
+        <h1 class="font-retro text-8xl mb-8">
+          The Ultimate Get Shit Done Partner in Web3
+        </h1>
+        <p class="font-comp text-5xl">
+          Connecting talent, technology, and opportunity in web3.
+          <br/>
+          <span class="text-primary">Zero BS, maximum impact.</span>
+        </p>
+      </div>
+      
+      <!-- Right half: image -->
+      <div class="w-1/2 flex items-center">
+        <img 
+          src="/thunder_potion.png" 
+          alt="Thunder Potion" 
+          class="w-full h-auto object-contain"
+        >
+      </div>
+    </section>
+  </main>
+</BaseLayout>

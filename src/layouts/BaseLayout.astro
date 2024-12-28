@@ -1,0 +1,17 @@
+---
+import "../styles/globals.css";
+import NavBar from "../components/NavBar.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body class="bg-primary-dark text-primary-light">
+    <NavBar/>
+    <div class="layer layer-back"></div>
+    <div class="layer layer-front"></div>
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,65 @@
+/* globals.css (or your main CSS) */
+
+@font-face {
+  font-family: "Retropix";
+  src: url("/fonts/retropix.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Computer-Says-No";
+  src: url("/fonts/computer-says-no.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 1) Fill the viewport, hide scrollbars */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 2) Common layer wrapper styles:
+     - 200% height so 2 tiles (each 100% high) can stack vertically
+     - We transform the whole wrapper up/down so it loops
+  */
+.layer-back,
+.layer-front {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  display: flex;
+  flex-direction: column; /* stack .tile divs top-to-bottom */
+  overflow: hidden; /* hide any overshoot */
+}
+
+/* Z-index so .layer-front is on top of .layer-back, 
+     but still behind main content. */
+.layer-back {
+  background-image: url("/back.png");
+  background-size: 950px;
+  background-repeat: repeat;
+  z-index: -2;
+  animation: scroll-back 20s linear infinite;
+}
+.layer-front {
+  z-index: -1;
+  animation: scroll-front 10s linear infinite;
+  background-image: url("/planets.png");
+}
+
+@keyframes scroll-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 950px 540px;
+  }
+}
