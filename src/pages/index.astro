@@ -3,15 +3,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <main class="mt-40">
-    <section class="mx-auto max-w-screen-lg flex">
+  <main class="mt-20 md:mt-40">
+    <section class="mx-auto max-w-screen-lg flex flex-col md:flex-row items-center md:items-start sm:p-6">
       
       <!-- Left half: text -->
-      <div class="w-1/2 pr-6">
-        <h1 class="font-retro text-8xl mb-8">
+      <div class="w-full md:w-1/2 px-4 md:pr-6 text-center md:text-left">
+        <h1 class="font-retro text-5xl md:text-8xl mb-4 md:mb-8">
           The Ultimate Get Shit Done Partner in Web3
         </h1>
-        <p class="font-comp text-5xl">
+        <p class="font-comp text-3xl md:text-5xl">
           Connecting talent, technology, and opportunity in web3.
           <br/>
           <span class="text-primary">Zero BS, maximum impact.</span>
@@ -19,14 +19,45 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </div>
       
       <!-- Right half: image -->
-      <div class="w-1/2 flex items-center">
+      <div class="w-full md:w-1/2 flex items-center justify-center mt-8 md:mt-0">
         <img 
           id="thunderPotion"
           src="/thunder_potion.png" 
           alt="Thunder Potion" 
-          class="w-full h-auto object-contain"
+          class="w-3/4 md:w-full h-auto object-contain"
         >
       </div>
     </section>
+    <section class="mx-auto max-w-screen-lg flex md:flex-row items-center md:items-start sm:p-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-12 max-w-7xl mx-auto px-4">
+          <!-- Strategic Matchmaking Card -->
+          <div class="flex flex-col items-center text-center p-6 rounded-lg bg-primary-dark shadow-lg">
+              <div class="mb-4">
+                  <img src="/jewels-crystal-05.png" alt="Gem Icon">
+              </div>
+              <h3 class="text-2xl font-retro mb-3 text-primary">Strategic Matchmaking</h3>
+              <p class="font-comp text-2xl text-primary-light">We connect the dots others miss. From NFT collections seeking DeFi utility to GameFi projects finding their perfect chain, we architect partnerships that drive real value in web3.</p>
+          </div>
+    
+          <!-- Value-First Network Card -->
+          <div class="flex flex-col items-center text-center p-6 rounded-lg bg-primary-dark shadow-lg">
+              <div class="mb-4">
+                  <img src="/spells-water-03.png" alt="Water Drop Icon">
+              </div>
+              <h3 class="text-2xl font-retro mb-3 text-primary">Value-First Network</h3>
+              <p class="font-comp text-2xl text-primary-light">Zero-cost membership focused on mutual growth. Join a curated community of builders, brands, and innovators who believe in the power of strategic collaboration.</p>
+          </div>
+    
+          <!-- Rapid Innovation Card -->
+          <div class="flex flex-col items-center text-center p-6 rounded-lg bg-primary-dark shadow-lg">
+              <div class="mb-4">
+                  <img src="/spells-fire-05.png" alt="">
+              </div>
+              <h3 class="text-2xl font-retro mb-3 text-primary">Rapid Innovation</h3>
+              <p class="font-comp text-2xl text-primary-light">Skip the endless networking. We make precise, meaningful introductions when we see genuine potential, helping you move faster in web3's dynamic ecosystem.</p>
+          </div>
+      </div>
+    </section>
+
   </main>
 </BaseLayout>

@@ -14,20 +14,14 @@
   font-style: normal;
 }
 
-/* 1) Fill the viewport, hide scrollbars */
 html,
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
-
-/* 2) Common layer wrapper styles:
-     - 200% height so 2 tiles (each 100% high) can stack vertically
-     - We transform the whole wrapper up/down so it loops
-  */
 .layer-back,
 .layer-front {
   position: fixed;
@@ -36,12 +30,10 @@ body {
   width: 100%;
   height: 200%;
   display: flex;
-  flex-direction: column; /* stack .tile divs top-to-bottom */
-  overflow: hidden; /* hide any overshoot */
+  flex-direction: column;
+  overflow: hidden;
 }
 
-/* Z-index so .layer-front is on top of .layer-back, 
-     but still behind main content. */
 .layer-back {
   background-image: url("/back.png");
   background-size: 950px;
