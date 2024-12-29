@@ -17,7 +17,7 @@ export default {
       },
       fontFamily: {
         retro: ["Retropix", "sans-serif"],
-        comp: ["Computer-Says-No", "sans-serif"],
+        comp: ["Monocode", "monospace"],
       },
     },
   },
