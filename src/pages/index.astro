@@ -4,8 +4,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout>
   <main class="mt-20 md:mt-40">
-    <section class="mx-auto max-w-screen-lg flex flex-col md:flex-row items-center md:items-start sm:p-6">
-      
+    <section
+      class="mx-auto max-w-screen-lg flex flex-col md:flex-row items-center md:items-start sm:p-6">
       <!-- Left half: text -->
       <div class="w-full md:w-1/2 px-4 md:pr-6 text-center md:text-left">
         <h1 class="font-retro text-5xl md:text-7xl mb-4 md:mb-8">
@@ -13,151 +13,240 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </h1>
         <p class="font-comp text-2xl">
           Connecting talent, technology, and opportunity in web3.
-          <br/>
+          <br />
           <span class="text-primary">Zero BS, maximum impact.</span>
         </p>
         <div class="mt-8">
-          <a href="https://t.me/m/A9h9_4xcODM1" class="bg-primary text-primary-dark hover:bg-primary-dark hover:text-white font-retro px-8 py-4 rounded-lg text-xl transition-colors duration-200">
+          <a
+            href="https://t.me/m/A9h9_4xcODM1"
+            class="bg-primary text-primary-dark hover:bg-primary-dark hover:text-white font-retro px-8 py-4 rounded-lg text-xl transition-colors duration-200">
             Join Today
           </a>
         </div>
       </div>
-      
+
       <!-- Right half: image -->
-      <div class="w-full md:w-1/2 flex items-center justify-center mt-8 md:mt-0">
-        <img 
+      <div
+        class="w-full md:w-1/2 flex items-center justify-center mt-8 md:mt-0">
+        <img
           id="thunderPotion"
-          src="/thunder_potion.png" 
-          alt="Thunder Potion" 
+          src="/thunder_potion.png"
+          alt="Thunder Potion"
           class="w-3/4 md:w-full h-auto object-contain"
-        >
+        />
       </div>
     </section>
 
-<!-- TL;DR Section -->
-<section class="mx-auto max-w-screen-lg p-4 sm:p-6 mt-8">
-  <h2 class="font-retro text-5xl text-primary mb-12 text-center">TL;DR</h2>
-  
-  <div class="grid gap-8 max-w-3xl mx-auto">
-    <div class="bg-primary-dark rounded-lg p-8">
-      <div class="flex items-start gap-4">
-        <div class="bg-primary text-primary-dark rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-retro">1</div>
-        <div>
-          <h3 class="font-comp text-xl text-primary">Skip the BS</h3>
-          <p class="font-comp text-lg text-primary-light mt-2">
-            Free to join, members-only network for serious web3 builders. No middlemen, no markups - just direct connections to opportunities.
-          </p>
+    <!-- TL;DR Section -->
+    <section class="mx-auto max-w-screen-lg p-4 sm:p-6 mt-8">
+      <h2 class="font-retro text-5xl text-primary mb-12 text-center">TL;DR</h2>
+
+      <div class="grid gap-8 max-w-3xl mx-auto">
+        <div class="bg-primary-dark rounded-lg p-8">
+          <div class="flex items-start gap-4">
+            <div
+              class="bg-primary text-primary-dark rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-retro">
+              1
+            </div>
+            <div>
+              <h3 class="font-comp text-xl text-primary">Skip the BS</h3>
+              <p class="font-comp text-lg text-primary-light mt-2">
+                Free to join, members-only network for serious web3 builders. No
+                middlemen, no markups - just direct connections to
+                opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-primary-dark rounded-lg p-8">
+          <div class="flex items-start gap-4">
+            <div
+              class="bg-primary text-primary-dark rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-retro">
+              2
+            </div>
+            <div>
+              <h3 class="font-comp text-xl text-primary">
+                Precision Partnerships
+              </h3>
+              <p class="font-comp text-lg text-primary-light mt-2">
+                We are not an agency - we're architects of opportunity. Our
+                curated introductions create value-driven partnerships that push
+                web3 forward.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="bg-primary-dark rounded-lg p-8">
-      <div class="flex items-start gap-4">
-        <div class="bg-primary text-primary-dark rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-retro">2</div>
-        <div>
-          <h3 class="font-comp text-xl text-primary">Precision Partnerships</h3>
-          <p class="font-comp text-lg text-primary-light mt-2">
-            Not another network - we're architects of opportunity. Our curated introductions create value-driven partnerships that push web3 forward.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <section class="mx-auto max-w-screen-lg p-4 sm:p-6 mt-20 mb-20 md:mt-20 md:mb-40">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 py-20 lg:py-40">
+    <section
+      class="mx-auto max-w-screen-lg p-4 sm:p-6 mt-20 mb-20 md:mt-20 md:mb-40">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 py-20 lg:py-40">
         <!-- Strategic Matchmaking Card -->
-        <div class="flex flex-col items-center text-center p-6 rounded-lg bg-primary-dark shadow-lg">
-            <div class="mb-4">
-                <img src="/jewels-crystal-05.png" alt="Gem Icon" class="w-16" style="image-rendering: pixelated">
-            </div>
-            <h3 class="text-2xl font-retro mb-3 text-primary">Strategic Matchmaking</h3>
-            <p class="font-comp text-lg text-primary-light">We connect the dots others miss. From NFT collections seeking DeFi utility to GameFi projects finding their perfect chain, we architect partnerships that drive real value in web3.</p>
+        <div
+          class="flex flex-col items-center text-center p-6 rounded-lg bg-primary-dark shadow-lg">
+          <div class="mb-4">
+            <img
+              src="/jewels-crystal-05.png"
+              alt="Gem Icon"
+              class="w-16"
+              style="image-rendering: pixelated"
+            />
+          </div>
+          <h3 class="text-2xl font-retro mb-3 text-primary">
+            Strategic Matchmaking
+          </h3>
+          <p class="font-comp text-lg text-primary-light">
+            We connect the dots others miss. From NFT collections seeking DeFi
+            utility to GameFi projects finding their perfect chain, we architect
+            partnerships that drive real value in web3.
+          </p>
         </div>
-    
+
         <!-- Value-First Network Card -->
-        <div class="flex flex-col items-center text-center p-6 rounded-lg bg-primary-dark shadow-lg">
-            <div class="mb-4">
-                <img src="/spells-water-03.png" alt="Water Drop Icon" class="w-16" style="image-rendering: pixelated">
-            </div>
-            <h3 class="text-2xl font-retro mb-3 text-primary">Value-First Network</h3>
-            <p class="font-comp text-lg text-primary-light">Zero-cost membership focused on mutual growth. Join a curated community of builders, brands, and innovators who believe in the power of strategic collaboration.</p>
+        <div
+          class="flex flex-col items-center text-center p-6 rounded-lg bg-primary-dark shadow-lg">
+          <div class="mb-4">
+            <img
+              src="/spells-water-03.png"
+              alt="Water Drop Icon"
+              class="w-16"
+              style="image-rendering: pixelated"
+            />
+          </div>
+          <h3 class="text-2xl font-retro mb-3 text-primary">
+            Value-First Network
+          </h3>
+          <p class="font-comp text-lg text-primary-light">
+            Zero-cost membership focused on mutual growth. Join a curated
+            community of builders, brands, and innovators who believe in the
+            power of strategic collaboration.
+          </p>
         </div>
-    
+
         <!-- Rapid Innovation Card -->
-        <div class="flex flex-col items-center text-center p-6 rounded-lg bg-primary-dark shadow-lg">
-            <div class="mb-4">
-                <img src="/spells-fire-05.png" alt="Fire Icon" class="w-16" style="image-rendering: pixelated">
-            </div>
-            <h3 class="text-2xl font-retro mb-3 text-primary">Rapid Innovation</h3>
-            <p class="font-comp text-lg text-primary-light">Skip the endless networking. We make precise, meaningful introductions when we see genuine potential, helping you move faster in web3's dynamic ecosystem.</p>
+        <div
+          class="flex flex-col items-center text-center p-6 rounded-lg bg-primary-dark shadow-lg">
+          <div class="mb-4">
+            <img
+              src="/spells-fire-05.png"
+              alt="Fire Icon"
+              class="w-16"
+              style="image-rendering: pixelated"
+            />
+          </div>
+          <h3 class="text-2xl font-retro mb-3 text-primary">
+            Rapid Innovation
+          </h3>
+          <p class="font-comp text-lg text-primary-light">
+            Skip the endless networking. We make precise, meaningful
+            introductions when we see genuine potential, helping you move faster
+            in web3's dynamic ecosystem.
+          </p>
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
     <!-- Why Section -->
-<section class="mx-auto max-w-screen-lg p-4 sm:p-6 mt-20 mb-80">
-  <div class="text-center mb-16">
-    <h2 class="font-retro text-4xl md:text-5xl text-primary mb-6">Our Why</h2>
-    <p class="font-comp text-xl text-primary-light max-w-3xl mx-auto">
-      In a space often dominated by short-term thinking and value extraction, Poolable emerged from a different vision—one that harks back to the original promise of web3.
-    </p>
-  </div>
+    <section class="mx-auto max-w-screen-lg p-4 sm:p-6 mt-20 mb-80">
+      <div class="text-center mb-16">
+        <h2 class="font-retro text-4xl md:text-5xl text-primary mb-6">
+          Our Why
+        </h2>
+        <p class="font-comp text-xl text-primary-light max-w-3xl mx-auto">
+          In a space often dominated by short-term thinking and value
+          extraction, Poolable emerged from a different vision—one that harks
+          back to the original promise of web3.
+        </p>
+      </div>
 
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
-    <div class="bg-primary-dark p-8 rounded-lg">
-      <h3 class="font-retro text-2xl text-primary mb-4">Born from Experience</h3>
-      <p class="font-comp text-lg text-primary-light">
-        Our founder's journey with his previous project revealed a crucial gap in the web3 ecosystem: the absence of a trusted space where builders could connect without the constant pressure of monetization and markup. We saw firsthand how difficult it was to find genuine partnerships amidst a sea of solicitations, and how many opportunities for collaboration were being missed simply because the right connections weren't being made.
-      </p>
-    </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+        <div class="bg-primary-dark p-8 rounded-lg">
+          <h3 class="font-retro text-2xl text-primary mb-4">
+            Born from Experience
+          </h3>
+          <p class="font-comp text-lg text-primary-light">
+            Our founder's journey with his previous project revealed a crucial
+            gap in the web3 ecosystem: the absence of a trusted space where
+            builders could connect without the constant pressure of monetization
+            and markup. We saw firsthand how difficult it was to find genuine
+            partnerships amidst a sea of solicitations, and how many
+            opportunities for collaboration were being missed simply because the
+            right connections weren't being made.
+          </p>
+        </div>
 
-    <div class="bg-primary-dark p-8 rounded-lg">
-      <h3 class="font-retro text-2xl text-primary mb-4">Beyond Networking</h3>
-      <p class="font-comp text-lg text-primary-light">
-        Poolable isn't just another business network—we're opportunity architects guided by a powerful conviction: that web3's greatest innovations will come from unexpected collaborations and genuine partnerships. Just as the early crypto community united around Bitcoin's vision of financial freedom, we exist to unite today's builders around the shared goal of making web3's idealistic vision a reality.
-      </p>
-    </div>
-  </div>
+        <div class="bg-primary-dark p-8 rounded-lg">
+          <h3 class="font-retro text-2xl text-primary mb-4">
+            Beyond Networking
+          </h3>
+          <p class="font-comp text-lg text-primary-light">
+            Poolable isn't just another business network—we're opportunity
+            architects guided by a powerful conviction: that web3's greatest
+            innovations will come from unexpected collaborations and genuine
+            partnerships. Just as the early crypto community united around
+            Bitcoin's vision of financial freedom, we exist to unite today's
+            builders around the shared goal of making web3's idealistic vision a
+            reality.
+          </p>
+        </div>
+      </div>
 
-  <div class="bg-primary-dark p-8 rounded-lg mb-20">
-    <h3 class="font-retro text-2xl text-primary mb-4">Our Commitment</h3>
-    <p class="font-comp text-lg text-primary-light">
-      We're starting with a radical premise: that the most valuable connections shouldn't come with a price tag. That's why Poolable operates on a zero-cost model, sustained by the generosity and mutual value creation of our community. We believe that by removing financial barriers and focusing on trust, we can create the kind of collaborative ecosystem that web3 has always promised to be.
-    </p>
-  </div>
+      <div class="bg-primary-dark p-8 rounded-lg mb-20">
+        <h3 class="font-retro text-2xl text-primary mb-4">Our Commitment</h3>
+        <p class="font-comp text-lg text-primary-light">
+          We're starting with a radical premise: that the most valuable
+          connections shouldn't come with a price tag. That's why Poolable
+          operates on a zero-cost model, sustained by the generosity and mutual
+          value creation of our community. We believe that by removing financial
+          barriers and focusing on trust, we can create the kind of
+          collaborative ecosystem that web3 has always promised to be.
+        </p>
+      </div>
 
-  <div class="bg-primary-dark p-8 rounded-lg mb-20">
-    <h3 class="font-retro text-2xl text-primary mb-4">Looking Forward</h3>
-    <p class="font-comp text-lg text-primary-light">
-      Every connection we facilitate, every partnership we inspire, and every collaboration we enable brings us one step closer to our vision of a more equitable and decentralized future. Whether you're building a groundbreaking protocol, launching an innovative NFT project, or developing new web3 infrastructure, you're not just joining a network—you're becoming part of a movement to reshape how value is created and shared in the digital age.
-    </p>
-  </div>
+      <div class="bg-primary-dark p-8 rounded-lg mb-20">
+        <h3 class="font-retro text-2xl text-primary mb-4">Looking Forward</h3>
+        <p class="font-comp text-lg text-primary-light">
+          Every connection we facilitate, every partnership we inspire, and
+          every collaboration we enable brings us one step closer to our vision
+          of a more equitable and decentralized future. Whether you're building
+          a groundbreaking protocol, launching an innovative NFT project, or
+          developing new web3 infrastructure, you're not just joining a
+          network—you're becoming part of a movement to reshape how value is
+          created and shared in the digital age.
+        </p>
+      </div>
 
-  <div class="text-center mb-20">
-    <p class="font-retro text-2xl text-primary">This is our why. This is Poolable.</p>
-  </div>
+      <div class="text-center mb-20">
+        <p class="font-retro text-2xl text-primary">
+          This is our why. This is Poolable.
+        </p>
+      </div>
 
-  <div class="bg-primary-dark p-8 rounded-lg">
-    <div class="max-w-3xl mx-auto text-center">
-      <img 
-        src="/jewels-jewel-07.png" 
-        alt="Fire Icon" 
-        class="w-16 mx-auto mb-6" 
-        style="image-rendering: pixelated"
-      >
-      <blockquote class="font-comp text-xl text-primary-light italic mb-4">
-        "I believe that we as cryptocurrency developers should be taking advantage of this perhaps brief period in which cryptocurrency is still an idealist-controlled industry to design institutions that maximize utilitarian social welfare metrics, not profit."
-      </blockquote>
-      <p class="font-retro text-primary">- Vitalik Buterin</p>
-      <p class="font-comp text-lg text-primary-light mt-6">
-        We're building Poolable to ensure that this vision doesn't remain just a quote, but becomes reality through the power of strategic collaboration.
-      </p>
-    </div>
-  </div>
-</section>
- 
-
+      <div class="bg-primary-dark p-8 rounded-lg">
+        <div class="max-w-3xl mx-auto text-center">
+          <img
+            src="/jewels-jewel-07.png"
+            alt="Fire Icon"
+            class="w-16 mx-auto mb-6"
+            style="image-rendering: pixelated"
+          />
+          <blockquote class="font-comp text-xl text-primary-light italic mb-4">
+            "I believe that we as cryptocurrency developers should be taking
+            advantage of this perhaps brief period in which cryptocurrency is
+            still an idealist-controlled industry to design institutions that
+            maximize utilitarian social welfare metrics, not profit."
+          </blockquote>
+          <p class="font-retro text-primary">- Vitalik Buterin</p>
+          <p class="font-comp text-lg text-primary-light mt-6">
+            We're building Poolable to ensure that this vision doesn't remain
+            just a quote, but becomes reality through the power of strategic
+            collaboration.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 </BaseLayout>
